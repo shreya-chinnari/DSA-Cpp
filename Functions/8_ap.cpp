@@ -1,3 +1,5 @@
+// arithmetic progression
+
 #include <iostream>
 using namespace std;
 
