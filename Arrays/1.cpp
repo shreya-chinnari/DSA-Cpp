@@ -4,25 +4,22 @@ using namespace std;
 int main()
 {
    // 1---------------------------------------------------------
-   int arr[10]; // Declare an array of size 10
+   int arr[10]; 
 
-   // Initialize all elements using a loop
    for (int i = 0; i < 10; i++)
    {
       arr[i] = 5;
    }
-
-   // Print the array
    for (int i = 0; i < 10; i++)
    {
       cout << arr[i] << " ";
-   }
+   } // 5 5 5 5 5 5 5 5 5 5
    cout << endl;
 
    // 2 ----------------------------------------------------------------------------
    int arr1[4] = {0};
-   cout << arr1 << endl; //  It prints the memory address of the array, not the elements inside it. - 0xb039ffe40
-                         // Print each element correctly
+   cout << arr1 << endl; // - 0xb039ffe40 - It prints the memory address of the array, not the elements inside it.
+
    // 3 ---------------------------------------------------------------------------
    for (int i = 0; i < 10; i++)
    {
@@ -37,7 +34,16 @@ int main()
    for (int i = 0; i < 10; i++)
    {
       cout << arr2[i] << " ";
-   }
+   } // 7 0 0 0 0 5 5 5 5 5
    cout << endl;
+
+   // 5 ---------------------------------------------------------
+   int arr3[10] = {1, 2, 3, 4};
+   for (int i = 0; i < 10; i++)
+   {
+      cout << arr3[i] << " ";
+   } // 1 2 3 4 0 0 0 0 0 0
+   cout << endl;
+
    return 0;
 }
