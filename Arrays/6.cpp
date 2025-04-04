@@ -41,7 +41,7 @@ int main()
    cout << "Enter number of elements: ";
    cin >> n;
 
-   int arr[n]; // ✅ Fix: Declare `arr[]` after `n` is initialized
+   int arr[n]; // ✅ Fix: Declare `arr[]` after `n` is initialized + // ❌ Variable-Length Array (VLA) - NOT allowed in C++
 
    getArray(arr, n); // ✅ Fix: Don't reassign `n` inside `getArray()`
 
@@ -55,3 +55,5 @@ int main()
 
    return 0;
 }
+
+// int* arr = new int[n];  // ✅ Allocating array dynamically
